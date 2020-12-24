@@ -697,7 +697,7 @@ static void ui_draw_tpms(UIState *s) {
 
   nvgTextAlign(s->vg, NVG_ALIGN_CENTER | NVG_ALIGN_BASELINE);
   const int pos_x = viz_tpms_x + (viz_tpms_w / 2);
-  ui_draw_text(s->vg, pos_x + viz_x_gain, 120 + viz_y_gain, "TPMS", 60, COLOR_ORANGE_ALPHA(200), s->font_sans_bold);
+  ui_draw_text(s->vg, pos_x + viz_x_gain, 120 + viz_y_gain, "TPMS", 60, COLOR_WHITE_ALPHA(200), s->font_sans_bold);
   snprintf(tpmsFl, sizeof(tpmsFl), "%.1f", s->scene.tpmsPressureFl);
   snprintf(tpmsFr, sizeof(tpmsFr), "%.1f", s->scene.tpmsPressureFr);
   snprintf(tpmsRl, sizeof(tpmsRl), "%.1f", s->scene.tpmsPressureRl);
