@@ -476,7 +476,7 @@ static void bb_ui_draw_measures_left(UIState *s, int bb_x, int bb_y, int bb_w ) 
        snprintf(val_str, sizeof(val_str), "-");
     }
       snprintf(uom_str, sizeof(uom_str), "");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "DESIR STEER",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "필요조향각",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -628,7 +628,7 @@ static void bb_ui_draw_measures_right(UIState *s, int bb_x, int bb_y, int bb_w )
 
     snprintf(val_str, sizeof(val_str), "%d", s->scene.satelliteCount > 0 ? s->scene.satelliteCount : 0);
     snprintf(uom_str, sizeof(uom_str), "");
-    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "SATELLITE",
+    bb_h +=bb_ui_draw_measure(s,  val_str, uom_str, "위성갯수",
         bb_rx, bb_ry, bb_uom_dx,
         val_color, lab_color, uom_color,
         value_fontSize, label_fontSize, uom_fontSize );
@@ -650,7 +650,7 @@ static void ui_draw_tpms(UIState *s) {
   char tpmsRl[32];
   char tpmsRr[32];
   const int viz_x_gain = 0; // tpms 위치 이동시 사용하는 부분 x축
-  const int viz_y_gain = 21; //y축 이동 숫자가 커지면 아래로 내려옴
+  const int viz_y_gain = 10; //y축 이동 숫자가 커지면 아래로 내려옴
   int viz_tpms_w = 300;
   int viz_tpms_h = 160;
   int viz_tpms_x = s->scene.viz_rect.x + viz_x_gain + s->scene.viz_rect.w - 1600;
