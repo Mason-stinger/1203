@@ -650,7 +650,7 @@ static void ui_draw_tpms(UIState *s) {
   char tpmsRl[32];
   char tpmsRr[32];
   const int viz_x_gain = 0; // tpms 위치 이동시 사용하는 부분 x축
-  const int viz_y_gain = 10; //y축 이동 숫자가 커지면 아래로 내려옴
+  const int viz_y_gain = 5; //y축 이동 숫자가 커지면 아래로 내려옴
   int viz_tpms_w = 300;
   int viz_tpms_h = 160;
   int viz_tpms_x = s->scene.viz_rect.x + viz_x_gain + s->scene.viz_rect.w - 1600;
